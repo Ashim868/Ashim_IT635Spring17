@@ -1,0 +1,144 @@
+    1  sudo rm -rf /
+    2  sudo apt-get update
+    3  sudo apt-get install synaptic
+    4  mkdir git
+    5  ls
+    6  cd git/
+    7  cd ..
+    8  rm -r git/
+    9  cd /
+   10  ls
+   11  cd /home
+   12  ls
+   13  cd git
+   14  cd ~
+   15  sudo synaptic
+   16  sudo apt-get install mysql-server
+   17  history
+   18  mysql -u root -p
+   19  show columns from class;
+   20  history
+   21  mysql iu root -p
+   22  mysql -u root -p
+   23  sudo adt-get install php
+   24  sudo apt-get install php
+   25  sudo apt-get install git
+   26  mkdir it635
+   27  ls
+   28  cd it635/
+   29  ls
+   30  git init
+   31  git status
+   32  mysqldump -u root -p Classes > backup.sql
+   33  cat backup.sql
+   34  git add backup.sql
+   35  git status
+   36  git rm --cached backup.sql
+   37  git status
+   38  git add backup.sql
+   39  history
+   40  history > history.txt
+   41  git add history.txt
+   42  git status
+   43  git commit -m "first commit,nothing important here"
+   44  get config --global user.email "as868@njit.edu"
+   45  git config --global user.name "Ashim Shrestha"
+   46  get config --global user.email "as868@njit.edu"
+   47  git commit -m "first commit,nothing important here"
+   48  get config --global user.email "as868@njit.edu"
+   49  git commit -m "first commit,nothing important here"
+   50  git config --global user.email "as868@njit.edu"
+   51  git config --global user.name "Ashim Shrestha"
+   52  git status
+   53  git commit -m "first commit,nothing important here"
+   54  git add history.txt
+   55  git status
+   56  hist
+   57  history
+   58  git add history.txt
+   59  git status
+   60  exit
+   61  ls
+   62  cd it635
+   63  hist
+   64  history
+   65  git add backup.sql
+   66  history > history.txt
+   67  status
+   68  git status
+   69  git add backup.sql
+   70  git status
+   71  git add backup.sql
+   72  git status
+   73  git add history.txt
+   74  git status
+   75  git add backup.sql
+   76  git status
+   77  git rm --cached backup.sql
+   78  git status
+   79  git add backup.sql
+   80  git commit -m "first commit,nothing important here"
+   81  git commit -- global user.email "as868@njit.edu"
+   82  git config -- global user.email "as868@njit.edu"
+   83  git config --global user.email "as868@njit.edu"
+   84  git config --global user.name "Ashim Shrestha"
+   85  git commit -m "first commit,nothing important here"
+   86  cd it635/
+   87  git init
+   88  git status
+   89  mysqldump -u root -p Classes > backup.sql
+   90  cat backup.sql
+   91  git add backup.sql
+   92  git status
+   93  git rm --cached backup.sql
+   94  git status
+   95  git add backup.sql
+   96  history
+   97  history > history.txt
+   98  cat history.txt
+   99  git add history.txt
+  100  git status
+  101  git commit -m "first commit. nothing important here"
+  102  git config --global user.email "as868@njit.edu"
+  103  git config --global user.name "ashim shrestha"
+  104  git commit -m "first commit,nothing important here"
+  105  git commit -m "first commit. nothing important here"
+  106  exit
+  107  mkdir it635
+  108  ls
+  109  cd it635/
+  110  git init
+  111  git status
+  112  mysqldump -u root ip Classes > backup.sql
+  113* ls/
+  114  cd desktop/
+  115  cd Desktop/
+  116  ls
+  117  ls -la
+  118  cd ..
+  119  sudo apt-get update
+  120  sudo apt-get install synaptic
+  121  sudo synaptic
+  122  /
+  123  sudo synaptic
+  124  history
+  125  sudo synaptic
+  126  sudo apt-get install mysql-server
+  127  mysql -u root -p
+  128  sudo apt-get install php
+  129  ls
+  130  mkdir it635
+  131  ls
+  132  cd it635
+  133  ls
+  134  git init
+  135  git status
+  136  mysqldump -u root -p Classes > backup.sql
+  137  cat backup.sql
+  138  git add backup.sql
+  139  git status
+  140  git rm --cached backup.sql
+  141  git status
+  142  git add backup.sql 
+  143  history
+  144  history > history.txt
