@@ -142,3 +142,17 @@
   142  git add backup.sql 
   143  history
   144  history > history.txt
+  145  git add history.txt 
+  146  git status
+  147  git commit -m "first commit, nothing important here"
+  148  git commit -m "backup.sql"
+  149  git commit -m "history.txt"
+  150  git commit --amend
+  151  sudo apt-git install gitk
+  152  sudo apt-get install gitk
+  153  gitk
+  154  git log
+  155  git remote add origin https://github.com/Ashim868/Ashim_IT635Spring17.git
+  156  git push -u origin master
+  157  history 
+  158  history > history.txt
