@@ -1,6 +1,6 @@
 <?php 
-require_once 'php_action/db_connect.php'; 
-require_once 'includes/header.php'; 
+include {('php_action/db_connect.php');} 
+include {('includes/header.php');} 
 
 if($_GET['o'] == 'add') { 
 // add order

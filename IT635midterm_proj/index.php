@@ -11,10 +11,12 @@ $dbname = 'wholesale';
 // db connection
 $con = mysqli_connect($localhost,$username,$password,$dbname);
 
-function session_start();
+session_start();
 
-if(isset($_SESSION['userId'])) {
-	header('dashboard.php');	
+
+
+if(isset($_SESSION['user_Id'])) {
+	header ('dashboard.php');	
 }
 
 $errors = array();
@@ -34,32 +36,32 @@ if($_POST) {
 		}
 	} else {
 		$sql = "SELECT * FROM users WHERE username = '$username'";
-		$result = $connect->query($sql);
+		$result = $mysqli_connect($sql);
 
 		if($result->num_rows == 1) {
 			$password = md5($password);
 			// exists
 			$mainSql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
-			$mainResult = $connect->query($mainSql);
+			$mainResult = $mysqli_connect($mainSql);
 
 			if($mainResult->num_rows == 1) {
 				$value = $mainResult->fetch_assoc();
 				$user_id = $value['user_id'];
 
 				// set session
-				$_SESSION['userId'] = $user_id;
+				$_SESSION['user_Id'] = $user_id;
 
 				header('dashboard.php');	
 			} else{
 				
 				$errors[] = "Incorrect username/password combination";
-			} // /else
+			} 
 		} else {		
 			$errors[] = "Username doesnot exists";		
-		} // /else
-	} // /else not empty username // password
+		} 
+	} 
 	
-} // /if $_POST
+} 
 
 ?>
 <html>
@@ -99,16 +101,20 @@ if($_POST) {
 					<div class="panel-body">
 
 						<div class="messages">
-							<?php if($errors) {
-								foreach ($errors as $key => $value) {
-									echo '<div class="alert alert-warning" role="alert">
-									<i class="glyphicon glyphicon-exclamation-sign"></i>
-									'.$value.'</div>';										
-									}
-								} ?>
+							<?php 
+
+if($errors) {
+		foreach ($errors as $key => $value) {
+		"<div class='alert alert-warning' role='alert'>
+		<i class='glyphicon glyphicon-exclamation-sign'></i>
+</div>"										
+		}
+} 
+
+?>
 						</div>
 
-						<form class="form-horizontal" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" id="loginForm">
+						<form class="form-horizontal" action="dashboard.php" method="post" id="loginForm">
 							<fieldset>
 							  <div class="form-group">
 									<label for="username" class="col-sm-2 control-label">Username</label>

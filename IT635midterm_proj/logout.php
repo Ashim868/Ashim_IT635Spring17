@@ -8,6 +8,6 @@ session_unset();
 // destroy the session 
 session_destroy(); 
 
-header('location: http://localhost/wholesale/index.php');
+header("whole_sale/index.php");
 
 ?>
